@@ -15,6 +15,11 @@ public:
         b = newB; 
     }
 
+    void serDimensions(double newA, double newB){
+        a = newA;
+        b = newB;
+    }
+
     double square(){
         return a * b;
     }
@@ -22,14 +27,20 @@ public:
         return 2 * (a + b);
     }
 private:
-    double a{1.0};
-    double b{2.0};
+    double a; //horizontal length
+    double b; //vertical length
 };
 
 int main(){
-    Rectangle rectangle1;
-    std::cout << rectangle1.square() << std::endl;
+    double a,b;
+    std::cout << "Enter the horizontal: ";
+    std::cin >> a;
+    std::cout << "Enter the vertical: ";
+    std::cin >> b;
 
-    Rectangle rectangle2(5.0, 3.9);
-    std::cout << rectangle2.square() << std::endl;
+    Rectangle rectangle1;
+    std::cout << "Square: " << rectangle1.square() << std::endl;
+
+    Rectangle rectangle2(a, b);
+    std::cout << "Perimeter: " << rectangle2.perimeter() << std::endl;
 }
