@@ -1,4 +1,5 @@
 #include "comment.hpp"
+
 class Rectangle{
 
 public:
@@ -12,6 +13,11 @@ public:
         b = newB; 
     }
 
+    void serDimensions(double newA, double newB){
+        a = newA;
+        b = newB;
+    }
+
     double square(){
         return a * b;
     }
@@ -19,6 +25,6 @@ public:
         return 2 * (a + b);
     }
 private:
-    double a{1.0};
-    double b{2.0};
+    double a; //horizontal length
+    double b; //vertical length
 };
