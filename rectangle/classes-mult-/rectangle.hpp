@@ -6,7 +6,7 @@ public:
     Rectangle(){
         a = 2.7;
         b = 5.3;
-    } //default
+    } 
 
     Rectangle(double newA, double newB){
         a = newA;
@@ -25,6 +25,6 @@ public:
         return 2 * (a + b);
     }
 private:
-    double a; //horizontal length
-    double b; //vertical length
+    double a; 
+    double b; 
 };
