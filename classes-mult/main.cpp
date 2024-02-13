@@ -8,4 +8,5 @@ int main(){
     Rectangle rectangle2(5.0, 3.9);
     std::cout << rectangle2.square() << std::endl;
     //ghj
+    //nnjkh
 }
